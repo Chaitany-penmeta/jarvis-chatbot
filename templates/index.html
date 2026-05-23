@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JARVIS AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="background">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+</div>
+
+<div class="jarvis-container">
+    <div class="hologram">
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+        <div class="core">J</div>
+    </div>
+
+    <h1>JARVIS AI</h1>
+    <p class="subtitle">Voice Enabled Groq AI Assistant</p>
+
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message message">
+            Hello sir, I am JARVIS. How can I help you?
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Ask anything...">
+        <button onclick="startVoice()">🎤</button>
+        <button onclick="sendMessage()">➤</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>templates/index.html
